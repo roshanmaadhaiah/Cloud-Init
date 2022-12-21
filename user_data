@@ -1,0 +1,101 @@
+LAMP:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/lamp.yaml -c local
+  
+  
+LEMP:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/lemp.yaml -c local
+  
+  
+MONGODB:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/mongodb.yaml -c local
+
+
+MYSQL:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/mysql.yaml -c local
+
+  
+NGINX:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/nginx.yaml -c local
+
+  
+PHPMYADMIN:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/phpmyadmin.yaml -c local
+
+  
+WORDPRESS:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/wordpress.yaml -c local
+  
+JOOMLA-LAMP:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/joomla-lamp.yaml -c local
