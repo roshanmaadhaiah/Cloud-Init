@@ -99,3 +99,15 @@ packages:
 runcmd:
   - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
   - ansible-playbook /usr/local/src/Apache-yaml/joomla-lamp.yaml -c local
+
+JOOMLA-LOMP:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/joomla-lomp.yaml -c local
