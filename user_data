@@ -111,3 +111,15 @@ packages:
 runcmd:
   - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
   - ansible-playbook /usr/local/src/Apache-yaml/joomla-lomp.yaml -c local
+
+DJANGO:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/django.yaml -c local
