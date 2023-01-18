@@ -135,3 +135,15 @@ packages:
 runcmd:
   - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
   - ansible-playbook /usr/local/src/Apache-yaml/nodejs.yaml -c local
+
+WEBMIN:
+
+#cloud-config
+
+packages:
+  - ansible
+  - git
+
+runcmd:
+  - git clone https://github.com/roshanmaadhaiah/lampsetup.git /usr/local/src/
+  - ansible-playbook /usr/local/src/Apache-yaml/webmin.yaml -c local
